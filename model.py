@@ -9,7 +9,6 @@ from sklearn.svm import SVC
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeClassifier
 
-
 X = np.array(iris.drop(['Species', 'Id'], 1))
 y = np.array(iris['Species'])
 
