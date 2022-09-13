@@ -3,7 +3,7 @@ import React from 'react';
 
 export default function Card({ title }) {
   return (
-    <TouchableOpacity className='bg-white p-10 mx-7 my-5'>
+    <TouchableOpacity className='bg-white p-10 mx-7 my-5 rounded-md'>
       <Text>{title}</Text>
     </TouchableOpacity>
   );
