@@ -1,10 +1,10 @@
-import { View, Text } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
 import React from 'react';
 
-export default function Card() {
+export default function Card({ title }) {
   return (
-    <View>
-      <Text>Card</Text>
-    </View>
+    <TouchableOpacity className='bg-white p-10 mx-7 my-5'>
+      <Text>{title}</Text>
+    </TouchableOpacity>
   );
 }
