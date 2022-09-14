@@ -1,4 +1,4 @@
-import { View, Text, ImageBackground, ScrollView, Animated } from 'react-native';
+import { View, Text, ImageBackground, ScrollView, Animated, TouchableOpacity } from 'react-native';
 import React, { useState, useRef } from 'react';
 import { useNavigation } from '@react-navigation/native';
 import { axios } from 'axios';
@@ -22,21 +22,12 @@ export default function HomeScreen() {
           className='pt-60 pb-100'
         >
           <View className='flex-row flex-wrap pb-72'>
-            <Card title='Ejercicio 1' />
-            <Card title='Ejercicio 2' />
-            <Card title='Ejercicio 3' />
-            <Card title='Ejercicio 1' />
-            <Card title='Ejercicio 2' />
-            <Card title='Ejercicio 3' />
-            <Card title='Ejercicio 1' />
-            <Card title='Ejercicio 2' />
-            <Card title='Ejercicio 3' />
-            <Card title='Ejercicio 1' />
-            <Card title='Ejercicio 2' />
-            <Card title='Ejercicio 3' />
-            <Card title='Ejercicio 1' />
-            <Card title='Ejercicio 2' />
-            <Card title='Ejercicio 3' />
+
+            <Card title='Selección' navigate="SelectionScreen" /> 
+            <Card title='Predicción' navigate="PredictionScreen"/>
+            <Card title='Algoritmo 1' navigate="Alg1Screen"/>
+            <Card title='Algoritmo 2' navigate="Alg2Screen"/>
+
           </View>
         </ScrollView>
       </ImageBackground>
