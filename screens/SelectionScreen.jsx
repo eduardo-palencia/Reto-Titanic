@@ -2,7 +2,7 @@ import { View, Text, SafeAreaView, TextComponent, ScrollView, Image } from 'reac
 import React from 'react';
 import mtz_sel from '../assets/favicon.png';
 import roc_sel from '../assets/favicon.png';
-import auc_sel from '../assets/favicon.png';
+
 
 export default function SelectionScreen() {
   return (
@@ -30,7 +30,7 @@ export default function SelectionScreen() {
           </View>
           <View className=' bg-gray-200 rounded-md p-2 m-4 items-center'>
             <Text className='text-center font-semibold pb-3'>AUC: </Text>
-            <Image source = {auc_sel} alt = "Profile" className='h-40 w-40'/>
+            <Text className='text-center text-red-600'>50</Text>
           </View>
           <View className='bg-gray-200 rounded-md p-2 m-4'>
             <Text className='text-center font-semibold pb-3'>Puntaje en Kaggle: </Text>

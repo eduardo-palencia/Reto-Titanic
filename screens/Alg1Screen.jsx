@@ -1,8 +1,8 @@
 import { View, Text, SafeAreaView, ScrollView, Image } from 'react-native'
 import React from 'react'
-import mtz_alg1 from '../assets/favicon.png';
-import roc_alg1 from '../assets/favicon.png';
-import auc_alg1 from '../assets/favicon.png';
+import mtz_alg1 from '../assets/conf_mat_lg.png';
+import roc_alg1 from '../assets/roc_lg.png';
+
 
 export default function Alg1Screen() {
   return (
@@ -18,7 +18,7 @@ export default function Alg1Screen() {
         <View className='m-4'>
           <View className=' bg-gray-200 rounded-md p-2 m-4'>
             <Text className='text-center font-semibold'>Precisión Obtenida: </Text>
-            <Text className='text-center text-red-600'>50</Text>
+            <Text className='text-center text-red-600'>0.8024691358024691</Text>
           </View>
           <View className=' bg-gray-200 rounded-md p-2 m-4 items-center'>
             <Text className='text-center font-semibold pb-3'>Matriz de confusión: </Text>
@@ -30,7 +30,7 @@ export default function Alg1Screen() {
           </View>
           <View className=' bg-gray-200 rounded-md p-2 m-4 items-center'>
             <Text className='text-center font-semibold pb-3'>AUC: </Text>
-            <Image source = {auc_alg1} alt = "Profile" className='h-40 w-40'/>
+            <Text className='text-center text-red-600'>0.7779695139488064</Text>
           </View>
           <View className='bg-gray-200 rounded-md p-2 m-4'>
             <Text className='text-center font-semibold pb-3'>Puntaje en Kaggle: </Text>
