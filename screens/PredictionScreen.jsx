@@ -84,7 +84,7 @@ export default function PredictionScreen() {
             <View className='flex-row justify-center py-4'>
               <Button onPress={handleSubmit} title='Submit' color='darkblue' />
             </View>
-            <View className={show ? 'py-4 bg-gray-200' : 'py-4 bg-gray-200 hidden'}>
+            <View className={show ? 'p-4 bg-gray-200' : 'p-4 bg-gray-200 hidden'}>
               <Text style={{ fontSize: 20, color: 'red' }} className='py-2'>
                 Logistic Regression: {lg ? 'Vive :)' : 'Muere :('}
               </Text>
