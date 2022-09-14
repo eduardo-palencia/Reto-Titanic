@@ -14,8 +14,10 @@ class Req:
   Pclass: int
   SibSp: int
   Embarked: int
+  Parch: int
+    
   def __array__(self):
-    return np.array([self.Sex, self.Pclass, self.SibSp, self.Embarked])
+    return np.array([self.Sex, self.Pclass, self.SibSp, self.Embarked, self.Parch])
 
 
 @app.route('/predict',methods=['POST'])
