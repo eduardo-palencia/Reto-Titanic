@@ -21,7 +21,7 @@ const AnimatedHeader = ({ animatedValue, headerTitle, headerImage }) => {
       }}
     >
       <Image source={headerImage} className='absolute w-full h-full opacity-60' />
-      <Text className='text-white text-center text-2xl font-bold py-6'> {headerTitle} </Text>
+      <Text className='text-white text-2xl font-bold text-center py-4'> {headerTitle} </Text>
     </Animated.View>
   );
 };

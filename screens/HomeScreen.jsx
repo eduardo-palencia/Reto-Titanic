@@ -21,13 +21,11 @@ export default function HomeScreen() {
           onScroll={Animated.event([{ nativeEvent: { contentOffset: { y: offset } } }], { useNativeDriver: false })}
           className='pt-60 pb-100'
         >
-          <View className='flex-row flex-wrap pb-72'>
-
-            <Card title='Selección' navigate="SelectionScreen" /> 
-            <Card title='Predicción' navigate="PredictionScreen"/>
-            <Card title='Algoritmo 1' navigate="Alg1Screen"/>
-            <Card title='Algoritmo 2' navigate="Alg2Screen"/>
-
+          <View className='pt-5 pb-72 px-10'>
+            <Card title='Selección' navigate='SelectionScreen' />
+            <Card title='Predicción' navigate='PredictionScreen' />
+            <Card title='Algoritmo 1' navigate='Alg1Screen' />
+            <Card title='Algoritmo 2' navigate='Alg2Screen' />
           </View>
         </ScrollView>
       </ImageBackground>
