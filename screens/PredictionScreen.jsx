@@ -1,4 +1,4 @@
-import { View, Text, Button, VirtualizedList, TouchableOpacity, ScrollView } from 'react-native';
+import { View, Text, Button, VirtualizedList, TouchableOpacity, ScrollView, StyleSheet } from 'react-native';
 import React, { useState, useLayoutEffect } from 'react';
 import { TextInput } from 'react-native-paper';
 import { Formik } from 'formik';
@@ -9,6 +9,10 @@ import axios from 'axios';
 export default function PredictionScreen() {
   const navigation = useNavigation();
   const [prediction, setPrediction] = useState('');
+
+  const styles = StyleSheet.create({
+    input: {}
+  });
 
   return (
     <SafeAreaView className='flex-1'>
@@ -29,8 +33,8 @@ export default function PredictionScreen() {
       >
         {({ handleChange, handleBlur, handleSubmit, values }) => (
           <ScrollView>
-            <View className='bg-slate-500 rounded-md'>
-              <Text className='text-xl text-center font-bold py-4 rounded-lg text-white'>Predicción</Text>
+            <View className='bg-slate-500'>
+              <Text className='text-xl text-center font-bold py-4 text-white'>Predicción</Text>
             </View>
             <View className='px-4 pt-4'>
               <Text className='py-2 font-bold'>Clase: </Text>
@@ -38,6 +42,7 @@ export default function PredictionScreen() {
                 onChangeText={handleChange('sepalLength')}
                 onBlur={handleBlur('sepalLength')}
                 value={values.sepalLength}
+                style={styles.input}
               />
               <Text className='py-2 font-bold'>Sexo: </Text>
               <TextInput
