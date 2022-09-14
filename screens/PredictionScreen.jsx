@@ -1,11 +1,10 @@
-import { View, Text, Button, StyleSheet, VirtualizedList, TouchableOpacity, ScrollView } from 'react-native';
+import { View, Text, Button, VirtualizedList, TouchableOpacity, ScrollView } from 'react-native';
 import React, { useState, useLayoutEffect } from 'react';
 import { TextInput } from 'react-native-paper';
 import { Formik } from 'formik';
-import axios from 'axios';
-import { ArrowLeftIcon } from 'react-native-heroicons/solid';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useNavigation } from '@react-navigation/native';
+import axios from 'axios';
 
 export default function PredictionScreen() {
   const navigation = useNavigation();
