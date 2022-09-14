@@ -9,7 +9,7 @@ export default function Alg1Screen() {
     <SafeAreaView className='px-3 py-2'>
         <ScrollView>
         <View className='bg-slate-500 rounded-md'>
-          <Text className='font-bold text-center py-4 text-xl text-white'>El mejor algoritmo</Text>
+          <Text className='font-bold text-center py-4 text-xl text-white'>Algortimo 1</Text>
         </View>
         <View className='py-6'>
           <Text className=' font-semibold text-center text-red-600 text-2xl'>Logistic regression</Text>
@@ -42,10 +42,7 @@ export default function Alg1Screen() {
             </Text>
         </View>
         <View className='bg-gray-200 rounded-lg py-3 px-10 m-4'>
-            <Text className='text-center px- 4'>Justificaciónxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx x x  x s s s a</Text>
-            <Text className='text-center px- 4'>Justificaciónxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx x x  x s s s a</Text>
-            <Text className='text-center px- 4'>Justificaciónxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx x x  x s s s a</Text>
-            <Text className='text-center px- 4'>Justificaciónxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx x x  x s s s a</Text>
+            <Text className='text-center px- 4'>La explicacion de la eleccion de la regresion logistica es precisamente que existe variables que estan estrechamente correlacionadas con la sobrevivencia, tal es el caso de el sexo, y la clasa social asi como el numero de familiares dentro del barco(Incluso con mas peso que la edad y que datos sesgados como el precio del boleto, se explica mas en el notebook), siendo estas variables sencillas de clasificar en tuplas, la regresion logistica fue muy conveniente para este caso de uso y sobre todo mucho mas rapida de  ejecutar que una red neuronal de varias capas.</Text>
         </View>
         </ScrollView>
     </SafeAreaView>
